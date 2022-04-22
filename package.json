@@ -2,20 +2,34 @@
   "name": "swapbase",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://clinzho1996.github.io/swapbase/"
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "@typeform/embed-react": "^1.15.0",
+    "bootstrap": "^5.1.3",
+    "gh-pages": "^3.2.3",
     "react": "^18.0.0",
+    "react-bootstrap-validation": "^0.1.11",
     "react-dom": "^18.0.0",
+    "react-elastic-carousel": "^0.11.5",
+    "react-owl-carousel": "^2.3.3",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "react-scroll-motion": "^0.2.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
