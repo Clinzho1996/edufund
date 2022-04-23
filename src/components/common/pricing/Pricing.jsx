@@ -10,7 +10,7 @@ const Pricing = () => <main>
      <center>
      <div className="breadcrumb">
        <h2>Pricing</h2>
-       <p>“Bridging the gap between the physical and the digital world”</p>
+       <p>Bridging the gap between the physical and the digital world</p>
     </div>
      </center>
      <Container>

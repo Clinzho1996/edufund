@@ -35,7 +35,6 @@ const Footer = () => <footer className="page-footer font-small blue pt-4">
             <div className="col-md-5 mt-md-0 mt-3">
             <img src="16.png" alt="logo" width={'150px'} />
                 <ul className="list-unstyled">
-                    <li><a href="#!">Swap manual for automation</a></li>
                     <li><a href="mailto:info@swapbase.io">info@swapbase.io</a></li>
                     <li><a href="tel:/+2347068365435">+234 7068 365 435</a></li>
                     <li><a href="tel:/+447796010762">+44 7796 010762</a></li>

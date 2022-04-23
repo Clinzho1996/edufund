@@ -31,6 +31,7 @@
 
 .form-group label{
     margin-top: 30px;
+    margin-left: 0px;
     margin-bottom: 15px !important;
 }
 
@@ -57,12 +58,12 @@
 }
 
 .form-group .form-submit{
-    width: 26.5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #EF6507;
     border-radius: 3px;
+    margin-left: 0px;
 }
 
 .form-group .form-submit:hover{
