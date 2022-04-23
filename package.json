@@ -2,7 +2,6 @@
   "name": "swapbase",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://clinzho1996.github.io/swapbase/"
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
