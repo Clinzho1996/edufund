@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import * as emailjs from "emailjs-com";
 
 export default function useContactFormHook() {
