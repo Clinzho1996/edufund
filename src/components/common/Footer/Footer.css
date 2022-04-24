@@ -29,6 +29,10 @@
     margin: 0px 10px;
 }
 
+input:focus{
+    box-shadow: none !important;
+}
+
 .btn-primary{
     margin-top: 50px;
     background-color: #ef6507;
@@ -40,6 +44,28 @@
     text-transform: capitalize;
 }
 
+.footer-main .btn-success:active,.footer-main .btn-success:visited {
+    background-color: #fff !important;
+    border: 2px solid #fff;
+}
+
+.footer-main .btn-primary:active,.footer-main .btn-primary:visited {
+    background-color: #ef6507 !important;
+    border: 2px solid #ef6507 !important;
+}
+
+.footer-main .btn-success:hover{
+    border: 2px solid #fff;
+}
+
+.footer-main .btn-primary:hover{
+    border: none;
+}
+
+.footer-main .btn-success{
+    background-color: transparent;
+    border: 2px solid #fff;
+}
 .btn-primary:hover{
     background-color: #fff;
     color: #1B1726;
@@ -101,7 +127,7 @@ footer{
 }
 
 .form-submit{
-    padding: 15px 10px;
+    padding: 13px 10px;
     font-size: 12px;
     font-weight: 600;
     margin-left: -10px;
