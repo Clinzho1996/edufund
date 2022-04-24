@@ -6,6 +6,7 @@ import {Card} from 'react-bootstrap';
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import { PopupButton } from "@typeform/embed-react";
+import ReactPlayer from "react-player";
 
 
 import './Home.css';
@@ -47,8 +48,16 @@ const Home = () =>
             </Container>
             <Container>
                 <center>
-                    <div className="enter-img">
-                        <img src="/invoice.gif" style={{borderRadius: '25px', marginTop: '20px'}} width={'100%'} alt="about" />
+                    <div className="enter-img" style={{borderRadius: "25px"}}>
+                    {/* <iframe
+                        src="https://www.youtube.com/embed/rfVUcLGiLXY"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        title="video"
+                    loop={true} width={"1000px"} height={'500px'} style={{borderRadius: '25px'}}/>{" "}
+                     */}
+                     <ReactPlayer className="react-player" url="https://www.youtube.com/watch?v=rfVUcLGiLXY" controls={true} loop={true} width={"100%"} height={'600px'} />
                     </div>
                 </center>
             </Container>

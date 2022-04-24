@@ -11,6 +11,11 @@
     padding: 15px;
 }
 
+.btn-new:hover{
+    background-color: #191524;
+    color: #fff;
+}
+
 .form-label{
     color: #000;
     font-size: 14px;
@@ -69,6 +74,11 @@
     font-size: 14px;
     padding: 10px;
     margin-top: 50px;
+}
+
+.btn-appoint:hover{
+    background-color: #fff;
+    color: #191524;
 }
 
 .appointment hr{

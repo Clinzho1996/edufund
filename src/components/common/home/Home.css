@@ -25,9 +25,10 @@
     color: rgba(255, 255, 255, 0.795);
 }
 
+
 .btn:focus{
-    border: none;
-    box-shadow: none;
+    border: none !important;
+    box-shadow: none !important;
 }
 .btn-danger{
     margin-top: 50px;
@@ -65,8 +66,12 @@
     margin: 0px 15px;
 }
 .enter-img{
-    margin-top: 10px;
-    margin-bottom: -450px;
+    margin-top: 20px;
+    margin-bottom: -500px;
+}
+
+.enter-img .react-player{
+    border-radius: 25px;
 }
 
 .abt-section{

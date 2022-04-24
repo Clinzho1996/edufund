@@ -26,7 +26,7 @@ const Footer = () => <footer className="page-footer font-small blue pt-4">
                             }} className="btn btn-primary">
                         Try for free
                     </PopupButton>
-                    <Link to="/contact"><Button className="btn btn-success">Contact Us</Button></Link>
+                    <Link to="/contact"><Button className="btn btn-success" aria-pressed="false">Contact Us</Button></Link>
                 </div>
             </div>
         </Container>
