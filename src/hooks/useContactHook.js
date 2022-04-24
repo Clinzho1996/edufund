@@ -18,7 +18,7 @@ export default function useContactFormHook() {
         "swapbase",
         "contact_form_template",
         templateParams,
-        "user_FfcSxQaX0OWEdzLafyD83"
+        process.env.REACT_APP_EMAILJS_USER_KEY
       );
       setIsLoading(false);
       alert(
