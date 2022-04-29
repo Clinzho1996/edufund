@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Aestetico';
-  src: url('./fonts/aestetico.woff2') format('woff2'),
-        url('./fonts/aestetico.woff') format('woff');
+  font-family: "Aestetico";
+  src: url("./fonts/aestetico.woff2") format("woff2"),
+    url("./fonts/aestetico.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,12 +9,13 @@
 
 body {
   margin: 0;
+  overflow-x: hidden !important;
   font-family: "Aestetico", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

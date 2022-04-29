@@ -18,9 +18,43 @@
   line-height: 65px;
 }
 
+.type-card {
+  width: 30rem;
+}
+
+.type-card .type-card__title {
+  align-items: center;
+}
+
+.enter-img .react-player {
+  border-radius: 25px;
+  height: 600px !important;
+}
+
 @media screen and (max-width: 960px) {
   .mainPage h1 {
     font-size: 48px;
+  }
+
+  .type-card {
+    width: 100% !important;
+  }
+
+  .our-types .col-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .type-card .type-card__title {
+    align-items: flex-start;
+  }
+
+  .clients__title {
+    line-height: normal !important;
+  }
+
+  .enter-img .react-player {
+    height: 300px !important;
   }
 }
 
@@ -46,8 +80,8 @@
 }
 
 .btn-danger:hover {
-  background-color: #fff !important;
-  color: #ef6507 !important;
+  background-color: #ef6507 !important;
+  color: #fff !important;
 }
 
 .info {
@@ -72,10 +106,6 @@
 .enter-img {
   margin-top: 50px;
   margin-bottom: -500px;
-}
-
-.enter-img .react-player {
-  border-radius: 25px;
 }
 
 .abt-section {
@@ -124,7 +154,7 @@
 }
 
 .why-us h2,
-.our-products h2,
+.our-types h2,
 .our-clients h2,
 .testimonials h2 {
   color: #000;
@@ -134,14 +164,19 @@
   text-transform: capitalize;
 }
 
+.testimonials h2,
+.testimonials h6 {
+  padding: 0 20px;
+}
+
 .why-us span,
-.our-products span,
+.our-types span,
 .testimonials span {
   color: #ef6507;
 }
 
 .why-us p,
-.our-products p,
+.our-types p,
 .testimonials h6 {
   color: #1b172696;
   font-size: 17px;
@@ -163,10 +198,16 @@
 }
 
 .card-text {
-  font-size: 14px !important;
+  font-size: 16px !important;
   font-weight: 400;
   line-height: 23.8;
   color: #1b172696;
+}
+
+@media screen and (max-width: 960px) {
+  .card-text {
+    font-size: 14px !important;
+  }
 }
 
 .card-body {
@@ -174,25 +215,29 @@
   border-bottom: 3px solid #ef6507;
 }
 
-.our-products {
+.our-types {
   background-color: #f7f8fa;
-  padding: 100px;
+  padding: 50px 20px !important;
 }
 
-.our-products .card-body {
+.our-types .card-body {
   border: none;
 }
 
-.our-products .card-title {
+.our-types .card-title {
   font-size: 19px;
 }
 
-.our-products .card-title img {
+.our-types .card-title img {
   margin-right: 16px;
 }
 
 .our-clients {
-  margin: 100px 0px;
+  margin: 100px 20px;
+}
+
+.clients__title {
+  max-width: 40rem;
 }
 
 .our-clients h5 {

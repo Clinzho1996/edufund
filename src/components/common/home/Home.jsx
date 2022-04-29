@@ -70,7 +70,6 @@ const Home = () => (
               controls={true}
               loop={true}
               width={"100%"}
-              height={"600px"}
             />
           </div>
         </center>
@@ -192,18 +191,15 @@ const Home = () => (
         </Row>
       </Container>
     </div>
-    <div className="our-products">
+    <div className="our-types">
       <Container>
         <h2>
           We build <span>ideals</span> driven by the future.
         </h2>
         <p>Unleashing our clients potential by maximising the innovation</p>
-        <Row style={{ padding: "50px 0px 0px 50px" }}>
+        <Row style={{ marginLeft: "0px !important", marginRight: "0px" }}>
           <Col xs="6">
-            <Card
-              style={{ width: "30rem" }}
-              className="shadow p-3 mb-5 bg-body rounded"
-            >
+            <Card className="shadow p-3 mb-5 bg-body rounded type-card">
               <Card.Body>
                 <Card.Title>
                   <img src="05.png" alt="logo" width={"40px"} /> Swapbase for
@@ -217,14 +213,19 @@ const Home = () => (
             </Card>
           </Col>
           <Col xs="6">
-            <Card
-              style={{ width: "30rem" }}
-              className="shadow p-3 mb-5 bg-body rounded"
-            >
+            <Card className="shadow p-3 mb-5 bg-body rounded type-card">
               <Card.Body>
-                <Card.Title>
-                  <img src="06.png" alt="logo" width={"40px"} /> Swapbase for
-                  Governments{" "}
+                <Card.Title
+                  className="type-card__title"
+                  style={{ display: "flex" }}
+                >
+                  <img
+                    src="06.png"
+                    style={{ flexShrink: 0 }}
+                    alt="logo"
+                    width={"40px"}
+                  />{" "}
+                  Swapbase for Governments{" "}
                 </Card.Title>
                 <Card.Text>
                   Governments and agencies can quickly automate archaic
@@ -234,10 +235,7 @@ const Home = () => (
             </Card>
           </Col>
           <Col xs="6">
-            <Card
-              style={{ width: "30rem" }}
-              className="shadow p-3 mb-5 bg-body rounded"
-            >
+            <Card className="shadow p-3 mb-5 bg-body rounded type-card">
               <Card.Body>
                 <Card.Title>
                   <img src="07.png" alt="logo" width={"40px"} /> Swapbase for
@@ -251,10 +249,7 @@ const Home = () => (
             </Card>
           </Col>
           <Col xs="6">
-            <Card
-              style={{ width: "30rem" }}
-              className="shadow p-3 mb-5 bg-body rounded"
-            >
+            <Card className="shadow p-3 mb-5 bg-body rounded type-card">
               <Card.Body>
                 <Card.Title>
                   <img src="08.png" alt="logo" width={"40px"} /> Swapbase for
@@ -272,9 +267,8 @@ const Home = () => (
     </div>
     <div className="our-clients">
       <Container>
-        <h2>
-          We Help Clients Solve Business Problems <br></br> and Increase
-          Productivity.
+        <h2 className="clients__title">
+          We Help Clients Solve Business Problems and Increase Productivity.
         </h2>
         <h5>Trusted by</h5>
         <Carousel breakPoints={breakPoints}>
