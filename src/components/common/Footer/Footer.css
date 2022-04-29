@@ -62,16 +62,17 @@ input:focus {
 }
 
 .footer-main .btn-primary:hover {
-  border: none;
+  border: 2px solid #ef6507;
 }
 
 .footer-main .btn-success {
   background-color: transparent;
   border: 2px solid #fff;
 }
-.btn-primary:hover {
-  background-color: #fff;
-  color: #1b1726;
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #ef6507;
+  color: #fff;
 }
 .btn-success {
   margin-top: 50px;
