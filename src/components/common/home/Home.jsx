@@ -121,8 +121,8 @@ const Home = () => (
             >
               <Card.Body>
                 <Card.Title>
-                  <i class="fa fa-check" aria-hidden="true"></i> Swapbase as a
-                  means to capturing data{" "}
+                  <i className="fa fa-check mr-3" aria-hidden="true"></i>
+                  &nbsp;&nbsp;&nbsp; Swapbase as a means to capturing data
                 </Card.Title>
                 <Card.Text>
                   We developed Swapbase as a means to capturing data in the most
@@ -139,8 +139,8 @@ const Home = () => (
             >
               <Card.Body>
                 <Card.Title>
-                  <i class="fa fa-check" aria-hidden="true"></i> Swapbase
-                  machine learning infrastructure{" "}
+                  <i className="fa fa-check" aria-hidden="true"></i>
+                  &nbsp;&nbsp;&nbsp; Swapbase machine learning infrastructure{" "}
                 </Card.Title>
                 <Card.Text>
                   Our Machine Learning infrastructure facilitates data
@@ -157,8 +157,8 @@ const Home = () => (
             >
               <Card.Body>
                 <Card.Title>
-                  <i class="fa fa-check" aria-hidden="true"></i> Swapbase makes
-                  automation easy{" "}
+                  <i className="fa fa-check" aria-hidden="true"></i>
+                  &nbsp;&nbsp;&nbsp; Swapbase makes automation easy
                 </Card.Title>
                 <Card.Text>
                   Digitizes your archives and paperwork while you're on the go,
@@ -176,8 +176,8 @@ const Home = () => (
             >
               <Card.Body>
                 <Card.Title>
-                  <i class="fa fa-check" aria-hidden="true"></i> Swapbase
-                  support businesses{" "}
+                  <i className="fa fa-check" aria-hidden="true"></i>
+                  &nbsp;&nbsp;&nbsp; Swapbase support businesses
                 </Card.Title>
                 <Card.Text>
                   By staying ahead of countless bottlenecks to economic growth,
@@ -201,9 +201,17 @@ const Home = () => (
           <Col xs="6">
             <Card className="shadow p-3 mb-5 bg-body rounded type-card">
               <Card.Body>
-                <Card.Title>
-                  <img src="05.png" alt="logo" width={"40px"} /> Swapbase for
-                  Developers{" "}
+                <Card.Title
+                  className="type-card__title"
+                  style={{ display: "flex" }}
+                >
+                  <img
+                    style={{ flexShrink: 0 }}
+                    src="05.png"
+                    alt="logo"
+                    width={"40px"}
+                  />{" "}
+                  Swapbase for Developers{" "}
                 </Card.Title>
                 <Card.Text>
                   Swapbase helps your startup, company or venture quickly scale
@@ -237,9 +245,17 @@ const Home = () => (
           <Col xs="6">
             <Card className="shadow p-3 mb-5 bg-body rounded type-card">
               <Card.Body>
-                <Card.Title>
-                  <img src="07.png" alt="logo" width={"40px"} /> Swapbase for
-                  Individuals{" "}
+                <Card.Title
+                  className="type-card__title"
+                  style={{ display: "flex" }}
+                >
+                  <img
+                    style={{ flexShrink: 0 }}
+                    src="07.png"
+                    alt="logo"
+                    width={"40px"}
+                  />{" "}
+                  Swapbase for Individuals{" "}
                 </Card.Title>
                 <Card.Text>
                   Use swapbase solutions to extract your personal data. You can
@@ -251,9 +267,17 @@ const Home = () => (
           <Col xs="6">
             <Card className="shadow p-3 mb-5 bg-body rounded type-card">
               <Card.Body>
-                <Card.Title>
-                  <img src="08.png" alt="logo" width={"40px"} /> Swapbase for
-                  Developers{" "}
+                <Card.Title
+                  className="type-card__title"
+                  style={{ display: "flex" }}
+                >
+                  <img
+                    style={{ flexShrink: 0 }}
+                    src="08.png"
+                    alt="logo"
+                    width={"40px"}
+                  />{" "}
+                  Swapbase for Developers{" "}
                 </Card.Title>
                 <Card.Text>
                   As a developer you can quickly integrate Swapbase APIs to your

@@ -45,10 +45,6 @@
     padding-right: 0 !important;
   }
 
-  .type-card .type-card__title {
-    align-items: flex-start;
-  }
-
   .clients__title {
     line-height: normal !important;
   }
@@ -164,8 +160,7 @@
   text-transform: capitalize;
 }
 
-.testimonials h2,
-.testimonials h6 {
+.testimonials h2 {
   padding: 0 20px;
 }
 
