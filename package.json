@@ -25,7 +25,8 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "react-scroll-motion": "^0.2.6",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "reactstrap": "^9.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

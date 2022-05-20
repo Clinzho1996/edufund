@@ -6,16 +6,25 @@
 }
 
 .mainPage {
-  padding: 200px;
-  background-image: url("/public/bg.jpg");
-  background-size: contain;
-  color: #fff;
+  padding: 100px 0px;
+  background-color: #fff;
 }
 
-.mainPage h1 {
-  font-size: 64px;
-  font-weight: 800;
-  line-height: 65px;
+.mainLeft button {
+  font-size: 20px;
+}
+
+.mainPage h2 {
+  font-size: 74px;
+  font-weight: 900;
+  line-height: 80px;
+  padding-bottom: 30px;
+  padding-top: 150px;
+  text-transform: capitalize;
+}
+
+.mainPage p{
+  color: rgba(0, 0, 0, 0.699);
 }
 
 .type-card {
@@ -55,10 +64,16 @@
 }
 
 .mainPage p {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 28.9px;
-  color: rgba(255, 255, 255, 0.795);
+}
+
+.mainLeft {
+  padding-right: 100px;
+}
+.mainRight {
+  padding-top: 50px;
 }
 
 .btn:focus {
@@ -107,7 +122,7 @@
 .abt-section {
   margin-top: 300px;
   padding: 50px;
-  background-image: url("/public/bg2.png");
+  background-color: #191524;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -117,6 +132,10 @@
   line-height: 46.8px;
   font-weight: 700;
   padding: 0px 350px;
+}
+
+.clients i {
+  color: #426ED1;
 }
 
 .abt-section p {
@@ -155,6 +174,7 @@
 .testimonials h2 {
   color: #000;
   font-size: 36px;
+  padding-bottom: 30px;
   font-weight: 700;
   line-height: 50.4px;
   text-transform: capitalize;
@@ -177,8 +197,12 @@
   font-size: 17px;
   line-height: 27.2px;
 }
+.our-types-future .card {
+  padding: 0px 0px !important;
+}
+
 .card {
-  padding: 0px 30px !important;
+  padding: 0px 40px !important;
 }
 
 .card i {
@@ -205,6 +229,11 @@
   }
 }
 
+.our-types-future .card-body {
+  padding: 0px 0px !important;
+  border-bottom: 3px solid #426ED1;
+}
+
 .card-body {
   padding: 40px 0px;
   border-bottom: 3px solid #ef6507;
@@ -212,15 +241,71 @@
 
 .our-types {
   background-color: #f7f8fa;
-  padding: 50px 20px !important;
+  padding: 100px 0px;
+  margin-top: 100px;
+}
+
+.our-types-future {
+  padding: 0px 0px;
+  margin-top: 100px;
+}
+
+.our-types-future h2{
+  margin-bottom: 40px;
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50.4px;
+  text-transform: capitalize;
+}
+
+.our-types-future .type-card__title{
+  padding: 30px 20px 10px;
+  font-size: 24px;
+}
+
+.subtitle{
+  padding: 0px 20px 20px;
+}
+
+.custom-amount{
+  display: flex;
+  margin-top: 10px;
+}
+
+.desired-amount {
+  margin-top: 10px;
+  padding: 0px 5px;
+}
+
+.desired-amount button {
+  margin-top: 20px;
+}
+
+.custom-amount .form-control{
+  margin: 5px !important;
+}
+.amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.our-types i {
+  font-size: 44px;
+  padding-right: 20px;
+  color: #426ED1;
 }
 
 .our-types .card-body {
   border: none;
 }
 
-.our-types .card-title {
-  font-size: 19px;
+.our-types .card-title, .our-types-future .card-title {
+  font-size: 24px;
 }
 
 .our-types .card-title img {
@@ -265,7 +350,7 @@
 }
 
 .testimonials {
-  background-image: url("/public/bg2.png");
+  background-color: #191524;
   background-size: cover;
   background-repeat: no-repeat;
 }

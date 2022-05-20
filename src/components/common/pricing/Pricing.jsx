@@ -1,40 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Form, InputGroup, Button } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
-import useContactFormHook from "../../../hooks/useContactHook";
 import "./Pricing.css";
 
-const initialContactDetailState = {
-  name: "",
-  email: "",
-  phone: "",
-  message: "",
-};
 
 const Pricing = () => {
-  const [contactDetails, setContactDetails] = useState(
-    initialContactDetailState // Store values in state
-  );
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setContactDetails({ ...contactDetails, [name]: value }); // onChange handler
-  };
-  const { isLoading, onSubmitContactDetails } = useContactFormHook();
-
-  const { name, email, phone, message } = contactDetails;
-
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    const data = await onSubmitContactDetails({
-      ...contactDetails,
-      message: phone ? `${message}. Reach out to them on ${phone}` : message,
-    });
-
-    if (data) setContactDetails(initialContactDetailState);
-  };
-
   return (
     <main>
       <center>
@@ -45,9 +16,7 @@ const Pricing = () => {
       </center>
       <Container>
         <center>
-          <Form
-            onSubmit={handleFormSubmit}
-            className="form-group shadow p-3 mb-5 bg-body rounded"
+          <Form className="form-group shadow p-3 mb-5 bg-body rounded"
           >
             <center>
               <img src="logo-new.png" alt="" width={"200px"} />
@@ -62,8 +31,6 @@ const Pricing = () => {
                   </InputGroup.Text>
                   <Form.Control
                     name="name"
-                    value={name}
-                    onChange={handleChange}
                     placeholder="Enter your full name"
                     required
                   />
@@ -79,8 +46,6 @@ const Pricing = () => {
                   <Form.Control
                     type="email"
                     name="email"
-                    value={email}
-                    onChange={handleChange}
                     placeholder="Enter your email address"
                     required
                   />
@@ -95,8 +60,6 @@ const Pricing = () => {
                   </InputGroup.Text>
                   <Form.Control
                     name="phone"
-                    value={phone}
-                    onChange={handleChange}
                     type="phone"
                     placeholder="Enter phone number"
                   />
@@ -112,8 +75,6 @@ const Pricing = () => {
                       lineHeight: "unset",
                     }}
                     name="message"
-                    value={message}
-                    onChange={handleChange}
                     as="textarea"
                     placeholder="Tell us what you need help with"
                     rows="3"
@@ -121,9 +82,7 @@ const Pricing = () => {
                 </InputGroup>
               </Col>
               <Col xs="12 g-1">
-                <Button type="submit" className="form-submit">
-                  {isLoading ? "Submitting..." : "Submit"}{" "}
-                  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <Button type="submit" className="form-submit"><i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </Button>
               </Col>
             </Row>

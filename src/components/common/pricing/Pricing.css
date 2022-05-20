@@ -1,7 +1,7 @@
 .breadcrumb{
     display: block;
     padding: 150px;
-    background-image: url("/public/bread.png");
+    background-color: #191524;
     background-size: cover;
     color: #fff;
     margin-left: -5px;

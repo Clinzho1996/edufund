@@ -2,11 +2,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
-import { Card } from "react-bootstrap";
+import { Card, Image, ProgressBar, Form, InputGroup } from "react-bootstrap";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
-import { PopupButton } from "@typeform/embed-react";
-import ReactPlayer from "react-player";
 
 import "./Home.css";
 
@@ -21,267 +19,109 @@ const Home = () => (
   <main>
     <div className="mainPage">
       <Container>
-        <center>
-          <h1>
-            Automate & Verify <br></br> Data in 60 seconds
-          </h1>
-          <p>Bridging the gap between the physical and the digital world</p>
-          <PopupButton
-            id="z9lnnwc4"
-            size={80}
-            hidden={{
-              foo: "Foo Value",
-              bar: "Bar Value",
-            }}
-            onReady={() => {
-              console.log("form ready");
-            }}
-            className="btn btn-danger"
-          >
-            Try Swap for free
-          </PopupButton>
-          <div className="info">
-            <p>
-              <i class="fa fa-check" aria-hidden="true"></i>Upload
-            </p>
-            <p>
-              <i class="fa fa-check" aria-hidden="true"></i>Extract
-            </p>
-            <p>
-              <i class="fa fa-check" aria-hidden="true"></i>Export
-            </p>
-          </div>
-        </center>
-      </Container>
-      <Container>
-        <center>
-          <div className="enter-img" style={{ borderRadius: "25px" }}>
-            {/* <iframe
-                        src="https://www.youtube.com/embed/rfVUcLGiLXY"
-                        frameborder="0"
-                        allow="autoplay; encrypted-media"
-                        allowfullscreen
-                        title="video"
-                    loop={true} width={"1000px"} height={'500px'} style={{borderRadius: '25px'}}/>{" "}
-                     */}
-            <ReactPlayer
-              className="react-player"
-              url="https://www.youtube.com/watch?v=rfVUcLGiLXY"
-              controls={true}
-              loop={true}
-              width={"100%"}
-            />
-          </div>
-        </center>
-      </Container>
-    </div>
-    <div className="abt-section">
-      <center>
-        <h2>Take advantage of a variety of products.</h2>
-        <p>
-          Take a look at some of the interesting products designed to assist you
-          in your growth.
-        </p>
-      </center>
-      <Row className="align-items-center swap-card">
-        <Col xs="5">
-          <img src="left.svg" alt="logo" width={"100%"} />
-          <h4>Swap Data Capture</h4>
-          <h6>
-            Discover how to extract data from International passports under 60
-            seconds....{" "}
-          </h6>
-        </Col>
-        <Col xs="2">
-          <img src="bord.png" alt="logo" width={"2%"} />
-        </Col>
-        <Col xs="5">
-          <img src="right.png" alt="logo" width={"77%"} />
-          <h4>Custom Data Capture</h4>
-          <h6>
-            Discover how to extract data from any type of document under 60
-            seconds{" "}
-          </h6>
-        </Col>
-      </Row>
-    </div>
-    <div className="why-us">
-      <Container>
-        <div>
-          <h2>
-            <span>Why</span> Swapbase!
-          </h2>
-          <p>Unleashing our clients potential by maximising the innovation</p>
-        </div>
-        <Row style={{ padding: "50px" }}>
-          <Col xs="6">
-            <Card
-              style={{ width: "30rem" }}
-              className="shadow p-3 mb-5  max-h-xl bg-body rounded"
-            >
-              <Card.Body>
-                <Card.Title>
-                  <i className="fa fa-check mr-3" aria-hidden="true"></i>
-                  &nbsp;&nbsp;&nbsp; Swapbase as a means to capturing data
-                </Card.Title>
-                <Card.Text>
-                  We developed Swapbase as a means to capturing data in the most
-                  efficient and secure ways for individuals, business and
-                  governments.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+        <Row>
+          <Col xs="6" className="mainLeft">
+            <h2>Learning should be <span style={{color: '#2B53AE'}}>easy and accessible</span> for all</h2>
+            <p>At Edufund we create equal opportunity for passionate learners to learn and earn with digital skills</p>
+            <button className="btn btn-primary">Get Started</button>
           </Col>
-          <Col xs="6">
-            <Card
-              style={{ width: "30rem" }}
-              className="shadow p-3 mb-5 bg-body rounded"
-            >
-              <Card.Body>
-                <Card.Title>
-                  <i className="fa fa-check" aria-hidden="true"></i>
-                  &nbsp;&nbsp;&nbsp; Swapbase machine learning infrastructure{" "}
-                </Card.Title>
-                <Card.Text>
-                  Our Machine Learning infrastructure facilitates data
-                  automation, secured data management and easy of data handling
-                  for everyday work.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs="6">
-            <Card
-              style={{ width: "30rem" }}
-              className="shadow p-3 mb-5 bg-body rounded"
-            >
-              <Card.Body>
-                <Card.Title>
-                  <i className="fa fa-check" aria-hidden="true"></i>
-                  &nbsp;&nbsp;&nbsp; Swapbase makes automation easy
-                </Card.Title>
-                <Card.Text>
-                  Digitizes your archives and paperwork while you're on the go,
-                  removing obstacles to quick and safe access to correct data.
-                  Swapbase makes your work routine paperless, automated and
-                  digital.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs="6">
-            <Card
-              style={{ width: "30rem" }}
-              className="shadow p-3 mb-5 bg-body rounded"
-            >
-              <Card.Body>
-                <Card.Title>
-                  <i className="fa fa-check" aria-hidden="true"></i>
-                  &nbsp;&nbsp;&nbsp; Swapbase support businesses
-                </Card.Title>
-                <Card.Text>
-                  By staying ahead of countless bottlenecks to economic growth,
-                  we also support businesses with the essential resources,
-                  enabling them dominant access to a pool of customers in a
-                  fast-paced and highly secure channel.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+          <Col xs="6" className="mainRight">
+            <img src="learning.gif" alt="learning" width="100%" />
           </Col>
         </Row>
       </Container>
     </div>
+    <section>
+      <Container className="clients">
+        <Row>
+          <Col lg="2" md="3" sm="4" xs="6">
+            <h3 className=" d-flex align-items-center gap-1">
+              <i class="fab fa-vimeo"></i> Vimeo
+            </h3>
+          </Col>
+
+          <Col lg="2" md="3" sm="4" xs="6">
+            <h3 className=" d-flex align-items-center gap-1">
+              <i class="fab fa-pinterest"></i> Pinterest
+            </h3>
+          </Col>
+
+          <Col lg="2" md="3" sm="4" xs="6">
+            <h3 className=" d-flex align-items-center gap-1">
+              <i class="fab fa-dribbble"></i> Dribble
+            </h3>
+          </Col>
+
+          <Col lg="2" md="3" sm="4" xs="6">
+            <h3 className=" d-flex align-items-center gap-1">
+              {" "}
+              <i class="fab fa-apple"></i> Apple
+            </h3>
+          </Col>
+
+          <Col lg="2" md="3" sm="4" xs="6">
+            <h3 className=" d-flex align-items-center gap-1">
+              {" "}
+              <i class="fab fa-finder"></i> Finder
+            </h3>
+          </Col>
+
+          <Col lg="2" md="3" sm="4" xs="6">
+            <h2 className=" d-flex align-items-center gap-1">
+              {" "}
+              <i class="fab fa-google-plus"></i> Google
+            </h2>
+          </Col>
+        </Row>
+      </Container>
+    </section>
     <div className="our-types">
       <Container>
         <h2>
-          We build <span>ideals</span> driven by the future.
+          How It Works
         </h2>
-        <p>Unleashing our clients potential by maximising the innovation</p>
         <Row style={{ marginLeft: "0px !important", marginRight: "0px" }}>
-          <Col xs="6">
-            <Card className="shadow p-3 mb-5 bg-body rounded type-card">
+          <Col xs="4">
+            <Card style={{ width: "24rem" }} className="shadow p-3 mb-5 bg-body rounded type-card">
               <Card.Body>
                 <Card.Title
                   className="type-card__title"
                   style={{ display: "flex" }}
                 >
-                  <img
-                    style={{ flexShrink: 0 }}
-                    src="05.png"
-                    alt="logo"
-                    width={"40px"}
-                  />{" "}
-                  Swapbase for Developers{" "}
+                 <i className="fa fa-check-circle"></i> Step 1
                 </Card.Title>
                 <Card.Text>
-                  Swapbase helps your startup, company or venture quickly scale
-                  data without breaking sweat
+                  Create Campaign
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
-          <Col xs="6">
-            <Card className="shadow p-3 mb-5 bg-body rounded type-card">
+          <Col xs="4">
+            <Card style={{ width: "24rem" }} className="shadow p-3 mb-5 bg-body rounded type-card">
               <Card.Body>
                 <Card.Title
                   className="type-card__title"
                   style={{ display: "flex" }}
                 >
-                  <img
-                    src="06.png"
-                    style={{ flexShrink: 0 }}
-                    alt="logo"
-                    width={"40px"}
-                  />{" "}
-                  Swapbase for Governments{" "}
+                 <i className="fa fa-info-circle"></i> Step 2
                 </Card.Title>
                 <Card.Text>
-                  Governments and agencies can quickly automate archaic
-                  processes of data extraction and management
+                  Add neccessary information
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
-          <Col xs="6">
-            <Card className="shadow p-3 mb-5 bg-body rounded type-card">
+          <Col xs="4">
+            <Card style={{ width: "24rem" }} className="shadow p-3 mb-5 bg-body rounded type-card">
               <Card.Body>
                 <Card.Title
                   className="type-card__title"
                   style={{ display: "flex" }}
                 >
-                  <img
-                    style={{ flexShrink: 0 }}
-                    src="07.png"
-                    alt="logo"
-                    width={"40px"}
-                  />{" "}
-                  Swapbase for Individuals{" "}
+                  <i className="fa fa-share"></i> Step 3
                 </Card.Title>
                 <Card.Text>
-                  Use swapbase solutions to extract your personal data. You can
-                  do more with swapbase. Contact us to find out.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs="6">
-            <Card className="shadow p-3 mb-5 bg-body rounded type-card">
-              <Card.Body>
-                <Card.Title
-                  className="type-card__title"
-                  style={{ display: "flex" }}
-                >
-                  <img
-                    style={{ flexShrink: 0 }}
-                    src="08.png"
-                    alt="logo"
-                    width={"40px"}
-                  />{" "}
-                  Swapbase for Developers{" "}
-                </Card.Title>
-                <Card.Text>
-                  As a developer you can quickly integrate Swapbase APIs to your
-                  software.
+                  post and share campain
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -289,83 +129,112 @@ const Home = () => (
         </Row>
       </Container>
     </div>
-    <div className="our-clients">
-      <Container>
-        <h2 className="clients__title">
-          We Help Clients Solve Business Problems and Increase Productivity.
-        </h2>
-        <h5>Trusted by</h5>
-        <Carousel breakPoints={breakPoints}>
-          <Item>
-            <img src="09.png" alt="logo" width={"100px"} />
-          </Item>
-          <Item>
-            <img src="10.png" alt="logo" width={"100px"} />
-          </Item>
-          <Item>
-            <img src="11.png" alt="logo" width={"80px"} />
-          </Item>
-          <Item>
-            <img src="12.png" alt="logo" width={"80px"} />
-          </Item>
-          <Item>
-            <img src="13.png" alt="logo" width={"100px"} />
-          </Item>
-        </Carousel>
-      </Container>
-    </div>
-    <div className="testimonials">
+    <div className="our-types-future">
       <Container>
         <h2>
-          Hear from <span>happy </span>Users.
+          Meet Future Innovators
         </h2>
-        <h6>Unleashing our clients potential by maximising the innovation</h6>
-        <Carousel breakPoints={breakPoints}>
-          <Card
-            style={{ width: "30rem" }}
-            className="testimonial shadow p-3 mb-5 bg-body rounded"
-          >
-            <div className="user-icon">
-              <img src="dev.png" alt="logo" width={"80px"} />
-            </div>
-            <p>
-              I'm only just starting to work with Swapbase, but so far it looks
-              great and extremely customizable. Not erything was clear to me
-              though, but the support has been absolutely amazing.
-            </p>
-            <h6>A.O Samson</h6>
-            <p>UI/UX Designer</p>
-            <div className="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-          </Card>
-          <Card
-            style={{ width: "30rem" }}
-            className="testimonial shadow p-3 mb-5 bg-body rounded"
-          >
-            <div className="user-icon">
-              <img src="dev.png" alt="logo" width={"80px"} />
-            </div>
-            <p>
-              I'm only just starting to work with Swapbase, but so far it looks
-              great and extremely customizable. Not erything was clear to me
-              though, but the support has been absolutely amazing.
-            </p>
-            <h6>C. Confidence</h6>
-            <p>Software Developer</p>
-            <div className="rating">
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-              <i class="fa fa-star" aria-hidden="true"></i>
-            </div>
-          </Card>
-        </Carousel>
+        <Row style={{ marginLeft: "0px !important", marginRight: "0px" }}>
+          <Col xs="4">
+            <Card style={{ width: "24rem" }} className="shadow p-0 mb-2 bg-body rounded type-card">
+              <Card.Body>
+                <Image src="django.jpg" width="100%" />
+                <Card.Title
+                  className="type-card__title"
+                > Help me learn Django
+                </Card.Title>
+                <Card.Subtitle className="subtitle">
+                My name is Femi. i'm interested in learning Django framework for backend development. I saw a course online with a lot of rating on Udemy
+                <br /> <br />
+                <ProgressBar now={60} />
+                <Form>
+                  <div className="custom-amount">
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                  </div>
+                  <div className="desired-amount">
+                    <Form.Control name="custom amount" placeholder="Enter a custom amount" />
+                    <button className="btn btn-primary">Donate</button>
+                  </div>
+                </Form>
+                <div className="amount">
+                  <p>Amount raised</p>
+                  <p>60%</p>
+                </div>
+                </Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs="4">
+            <Card style={{ width: "24rem" }} className="shadow p-0 mb-2 bg-body rounded type-card">
+              <Card.Body>
+                <Image src="django.jpg" width="100%" />
+                <Card.Title
+                  className="type-card__title"
+                > Help me learn Django
+                </Card.Title>
+                <Card.Subtitle className="subtitle">
+                My name is Femi. i'm interested in learning Django framework for backend development. I saw a course online with a lot of rating on Udemy
+                <br /> <br />
+                <ProgressBar now={60} />
+                <Form>
+                  <div className="custom-amount">
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                  </div>
+                  <div className="desired-amount">
+                    <Form.Control name="custom amount" placeholder="Enter a custom amount" />
+                    <button className="btn btn-primary">Donate</button>
+                  </div>
+                </Form>
+                <div className="amount">
+                  <p>Amount raised</p>
+                  <p>60%</p>
+                </div>
+                </Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs="4">
+            <Card style={{ width: "24rem" }} className="shadow p-0 mb-2 bg-body rounded type-card">
+              <Card.Body>
+                <Image src="django.jpg" width="100%" />
+                <Card.Title
+                  className="type-card__title"
+                > Help me learn Django
+                </Card.Title>
+                <Card.Subtitle className="subtitle">
+                My name is Femi. i'm interested in learning Django framework for backend development. I saw a course online with a lot of rating on Udemy
+                <br /> <br />
+                <ProgressBar now={60} />
+                <Form>
+                  <div className="custom-amount">
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                  </div>
+                  <div className="desired-amount">
+                    <Form.Control name="custom amount" placeholder="Enter a custom amount" />
+                    <button className="btn btn-primary">Donate</button>
+                  </div>
+                </Form>
+                <div className="amount">
+                  <p>Amount raised</p>
+                  <p>60%</p>
+                </div>
+                </Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
       </Container>
     </div>
   </main>

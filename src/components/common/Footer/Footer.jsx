@@ -1,21 +1,16 @@
 import React from "react";
-import { PopupButton } from "@typeform/embed-react";
-import { Button, Container } from "react-bootstrap";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { Button, Container, Row, Col, InputGroup, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import "./Footer.css";
-import SubscribeForm from "./SubscribeForm";
 
-const Footer = () => {
-  const postUrl = `https://swapbase.us14.list-manage.com/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
-
+const Footer = () => { 
   return (
     <footer className="page-footer font-small blue pt-4">
       <Container>
         <div className="footer-main">
           <h1>
-            Start your <span>Data Automation </span> now
+            Create a new <span style={{color: '#426ED1'}}> Campaign </span> now
           </h1>
           <p>
             Reach out for any questions on our Enterprise plan, pricing, or
@@ -23,20 +18,6 @@ const Footer = () => {
             specialist.
           </p>
           <div className="footer-btn">
-            <PopupButton
-              id="z9lnnwc4"
-              size={80}
-              hidden={{
-                foo: "Foo Value",
-                bar: "Bar Value",
-              }}
-              onReady={() => {
-                console.log("form ready");
-              }}
-              className="btn btn-primary"
-            >
-              Try for free
-            </PopupButton>
             <Link to="/contact">
               <Button className="btn btn-success" aria-pressed="false">
                 Contact Us
@@ -48,16 +29,16 @@ const Footer = () => {
       <div className="container-fluid footer-nav text-left text-md-left">
         <div className="row">
           <div className="col-md-5 mt-md-0 mt-3">
-            <img src="16.png" alt="logo" width={"150px"} />
+            <img src="logo-white.png" alt="logo" width={"150px"} />
             <ul className="list-unstyled">
               <li>
-                <a href="mailto:info@swapbase.io">info@swapbase.io</a>
+                <a href="/"><span style={{color: '#426ED1'}}>Total Raised:</span> 25,000,000</a>
               </li>
               <li>
-                <a href="tel:/+2347068365435">+234 7068 365 435</a>
+                <a href="/"><span style={{color: '#426ED1'}}>Total Campaigns:</span> 23,000</a>
               </li>
               <li>
-                <a href="tel:/+447796010762">+44 7796 010762</a>
+                <a href="/"><span style={{color: '#426ED1'}}>Active Campaigns:</span> 244</a>
               </li>
             </ul>
           </div>
@@ -68,19 +49,16 @@ const Footer = () => {
             <h5 className="footer-group-name">Quick Links</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/">About</Link>
               </li>
               <li>
-                <Link to="/solution">Solution</Link>
+                <Link to="/">Mission</Link>
               </li>
               <li>
-                <Link to="/pricing">Pricing</Link>
+                <Link to="/">Our Team</Link>
               </li>
               <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/faq">FAQs</Link>
+                <Link to="/">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -88,19 +66,63 @@ const Footer = () => {
           <div className="col-md-4 mb-md-0 mb-3">
             <h5 className="footer-group-name">Newsletter</h5>
             <p className="newsletter-intro">
-              To receive industry updates, of technology and decentralized data,
-              subscribe to our newsletter.
+              To receive industry updates on latest educational funds <br /> program please subscribe for our monthly campaigns
             </p>
-            <MailchimpSubscribe
-              url={postUrl}
-              render={(props) => <SubscribeForm {...props} />}
-            />
+            <Form>
+            <Row className="align-items-left">
+              <Col xs="8 g-1">
+                <InputGroup hasValidation>
+                  <InputGroup.Text>@</InputGroup.Text>
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                  <Form.Control.Feedback></Form.Control.Feedback>
+                </InputGroup>
+              </Col>
+              <Col xs="4 g-1">
+                <Button type="submit" className="form-submit">
+                Subscribe <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </Button>
+              </Col>
+
+              <div className="mt-3">
+                
+              </div>
+
+              <div className="social-icons">
+                <a
+                  href="/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fa-brands fa-facebook-square"></i>
+                </a>
+                <a
+                  href="/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fa-brands fa-instagram-square"></i>
+                </a>
+                <i class="fa-brands fa-linkedin"></i>
+                <a
+                  href="/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </Row>
+          </Form>
           </div>
         </div>
         <hr />
         <div className="footer-copyright text-left py-3">
           <a href="/">
-            Swapbase ©{new Date().getFullYear()}. All Rights Reserved.
+            DFMlab ©{new Date().getFullYear()}. All Rights Reserved.
           </a>
         </div>
       </div>

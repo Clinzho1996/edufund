@@ -1,9 +1,7 @@
 .footer-main {
-  background: url(/public/15.png) no-repeat;
+  background: #000000;
   background-size: cover;
   text-align: center;
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
   margin-top: 100px;
   margin-bottom: 70px;
 }
@@ -16,7 +14,7 @@
 }
 
 .footer-main span {
-  color: #ef6507;
+  color: #426ED1;
 }
 
 .footer-main p {
@@ -36,7 +34,7 @@ input:focus {
 
 .btn-primary {
   margin-top: 50px;
-  background-color: #ef6507;
+  background-color: #426ED1;
   color: #fff;
   padding: 15px 50px;
   border-radius: 0px;
@@ -53,8 +51,8 @@ input:focus {
 
 .footer-main .btn-primary:active,
 .footer-main .btn-primary:visited {
-  background-color: #ef6507 !important;
-  border: 2px solid #ef6507 !important;
+  background-color: #426ED1 !important;
+  border: 2px solid #426ED1 !important;
 }
 
 .footer-main .btn-success:hover {
@@ -62,7 +60,7 @@ input:focus {
 }
 
 .footer-main .btn-primary:hover {
-  border: 2px solid #ef6507;
+  border: 2px solid #426ED1;
 }
 
 .footer-main .btn-success {
@@ -71,7 +69,7 @@ input:focus {
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #ef6507;
+  background-color: #426ED1;
   color: #fff;
 }
 .btn-success {
@@ -91,7 +89,7 @@ footer {
 }
 
 .footer-nav {
-  background-color: #1b1726;
+  background-color: #000000;
   color: #fff;
   width: 100% !important;
   padding: 70px 70px 20px 70px;

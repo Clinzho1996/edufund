@@ -2,7 +2,6 @@ import React from "react";
 import { Button } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
-import { NavDropdown } from 'react-bootstrap';
 import { Form, Container, Offcanvas } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
@@ -13,7 +12,7 @@ const Header = () => <main>
           <div className="offcanvas-header">  
             <button className="btn-close float-end"></button>
         </div>
-          <Navbar.Brand as={Link} to="/" exact><img src="16.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
+          <Navbar.Brand as={Link} to="/" exact><img src="logo-black.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -21,20 +20,16 @@ const Header = () => <main>
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <NavDropdown title="Products" id="navbarScrollingDropdown">
-                <NavDropdown.Item as={Link} to="/swapdata" ><li>Swap Data Capture</li></NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/custom-data" ><li>Custom Data Capture</li></NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link as={Link} to="/solution" >
-                Solution
+              <Nav.Link as={Link} to="/" >
+                Start
               </Nav.Link>
-              <Nav.Link as={Link} to="/pricing" >
-                Pricing
+              <Nav.Link as={Link} to="/" >
+                Team
               </Nav.Link>
-              <Nav.Link as={Link} to="/about" >About</Nav.Link>          
+              <Nav.Link as={Link} to="/" >Our Mission</Nav.Link>          
             </Nav>
             <Form className="d-flex">
-              <Button variant="outline-success" as={Link} to="/contact">Get Started</Button>
+              <Button variant="outline-success" as={Link} to="/">Connect Wallet</Button>
             </Form>
           </Navbar.Collapse>
       </Navbar>
@@ -52,20 +47,16 @@ const Header = () => <main>
             </Offcanvas.Header>
             <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <NavDropdown title="Products" id="navbarScrollingDropdown">
-                <NavDropdown.Item as={Link} to="/swapdata" eventKey="1" ><li>Swap Data Capture</li></NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/custom-data" eventKey="2" ><li>Custom Data Capture</li></NavDropdown.Item>
-              </NavDropdown>
               <Nav.Link as={Link} to="/solution" eventKey="3" >
-                Solution
+                Start
               </Nav.Link>
               <Nav.Link as={Link} to="/pricing" eventKey="4">
-                Pricing
+                Team
               </Nav.Link>
-              <Nav.Link as={Link} to="/about" eventKey="5">About</Nav.Link>          
+              <Nav.Link as={Link} to="/about" eventKey="5">Our Mission</Nav.Link>          
             </Nav>
             <Form className="d-flex">
-              <Nav.Link className="outline-success" as={Link} to="/contact" eventKey="6">Get Started</Nav.Link>
+              <Nav.Link className="outline-success" as={Link} to="/contact" eventKey="6">Connect Wallet</Nav.Link>
             </Form>
             </Offcanvas.Body>
        </Navbar.Offcanvas>
