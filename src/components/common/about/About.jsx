@@ -28,7 +28,7 @@ const About = () => (
           </h5>
           <p>To learn more about how we can help you solve this problem </p>
           <Link to="/contact">
-            Contact us <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            Contact us <i className="fa fa-arrow-right" aria-hidden="true"></i>
           </Link>
         </Col>
         <Col xs="6">

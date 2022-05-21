@@ -83,7 +83,7 @@ const Footer = () => {
               </Col>
               <Col xs="4 g-1">
                 <Button type="submit" className="form-submit">
-                Subscribe <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                Subscribe <i className="fa fa-arrow-right" aria-hidden="true"></i>
                 </Button>
               </Col>
 
@@ -97,22 +97,22 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="fa-brands fa-facebook-square"></i>
+                  <i className="fa-brands fa-facebook-square"></i>
                 </a>
                 <a
                   href="/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="fa-brands fa-instagram-square"></i>
+                  <i className="fa-brands fa-instagram-square"></i>
                 </a>
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
                 <a
                   href="/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-twitter"></i>
                 </a>
               </div>
             </Row>

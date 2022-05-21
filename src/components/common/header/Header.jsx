@@ -12,7 +12,7 @@ const Header = () => <main>
           <div className="offcanvas-header">  
             <button className="btn-close float-end"></button>
         </div>
-          <Navbar.Brand as={Link} to="/" exact><img src="logo-black.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
+          <Navbar.Brand as={Link} to="/" exact="true"><img src="logo-black.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -20,7 +20,7 @@ const Header = () => <main>
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link as={Link} to="/" >
+              <Nav.Link as={Link} to="/startcampaign" >
                 Start
               </Nav.Link>
               <Nav.Link as={Link} to="/" >
@@ -35,7 +35,7 @@ const Header = () => <main>
       </Navbar>
       <Container className="mobile">
       <Navbar bg="transparent"  fixed="top" collapseOnSelect expand="false" >
-           <Navbar.Brand as={Link} to="/" exact><img src="16.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
+           <Navbar.Brand as={Link} to="/" exact="true"><img src="16.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
               id="offcanvasNavbar"
