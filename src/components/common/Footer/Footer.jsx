@@ -18,12 +18,12 @@ const Footer = () => {
             specialist.
           </p>
           <div className="footer-btn">
-            <Link to="/contact">
+            <Link to="/">
               <Button className="btn btn-success" aria-pressed="false">
                 Connect Wallet
               </Button>
             </Link>
-            <Link to="/contact">
+            <Link to="/">
               <Button className="btn btn-primary" aria-pressed="false">
                 Contact Us
               </Button>
@@ -68,7 +68,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-md-4 mb-md-0 mb-3">
+          <div className="col-md-4 mb-md-0 mb-3 foot-btn">
             <h5 className="footer-group-name">Newsletter</h5>
             <p className="newsletter-intro">
               To receive industry updates on latest educational funds <br /> program please subscribe for our monthly campaigns

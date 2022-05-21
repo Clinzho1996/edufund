@@ -457,6 +457,12 @@
     border-radius: 65px !important;
     padding: 30px 70px !important;
   }
+
+  .align-items-left .col-4{
+    width: 0% !important;
+    flex: 0 0 auto !important;
+  }
+
   .footer-main h1 {
     font-size: 28px !important;
     line-height: 30px !important;
