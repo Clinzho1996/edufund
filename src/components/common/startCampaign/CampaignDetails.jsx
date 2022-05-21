@@ -10,8 +10,8 @@ export default function CampaignDetails({
     <Container className="userContainer">
       <Row >
         <Col md={6} className="m-auto p-5">
-          <h2 className="  m-auto mb-3">Create a new campaign</h2>
-          <Form className=" m-auto d-flex flex-column ">
+          <h2 className="mb-3 text-primary">Create a new campaign</h2>
+          <Form className=" d-flex flex-column ">
             <label htmlFor="campaignTitle" className="mt-2">
               Campaign title
             </label>
@@ -33,7 +33,7 @@ export default function CampaignDetails({
               type="text"
               name="details"
               id="details"
-              placeholder="Try to be as convincin as possible"
+              placeholder="Try to be as convincing as possible"
               className="my-2 ps-2 py-2"
               onChange={(e) =>
                 setStartCampaign({ ...startCampaign, campaignDetails: e.target.value })
