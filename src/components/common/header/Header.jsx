@@ -35,7 +35,7 @@ const Header = () => <main>
       </Navbar>
       <Container className="mobile">
       <Navbar bg="transparent"  fixed="top" collapseOnSelect expand="false" >
-           <Navbar.Brand as={Link} to="/" exact><img src="16.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
+           <Navbar.Brand as={Link} to="/" exact><img src="logo-black.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
               id="offcanvasNavbar"
@@ -43,7 +43,7 @@ const Header = () => <main>
               placement="end"
             >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel"><img src="logo-new.png" alt="brand-logo" width={'250px'} /></Offcanvas.Title>
+              <Offcanvas.Title id="offcanvasNavbarLabel"><img src="logo-black.png" alt="brand-logo" width={'250px'} /></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -56,7 +56,7 @@ const Header = () => <main>
               <Nav.Link as={Link} to="/about" eventKey="5">Our Mission</Nav.Link>          
             </Nav>
             <Form className="d-flex">
-              <Nav.Link className="outline-success" as={Link} to="/contact" eventKey="6">Connect Wallet</Nav.Link>
+              <Nav.Link className="outline-success" as={Link} to="/" eventKey="6">Connect Wallet</Nav.Link>
             </Form>
             </Offcanvas.Body>
        </Navbar.Offcanvas>

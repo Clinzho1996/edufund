@@ -194,7 +194,7 @@
     padding: 0px !important;
   }
   .offcanvas-body .outline-success {
-    background-color: #ef6507;
+    background-color: #191524 !important;
     padding: 13px 30px;
     margin-top: 20px;
     border-radius: 6px !important;
@@ -210,6 +210,9 @@
     box-shadow: none !important;
     outline: none !important;
     border: none !important;
+    color: #191524 !important;
+    border: 1px solid #191524 !important;
+    background: transparent !important;
   }
 
   .offcanvas-header .btn-close {
@@ -225,7 +228,7 @@
     text-align: center;
   }
 
-  .col-3 {
+  .col-3, .col-4 {
     flex: 0 0 auto;
     width: 100% !important;
   }
@@ -452,7 +455,7 @@
   .footer-main {
     text-align: center !important;
     border-radius: 65px !important;
-    padding: 100px !important;
+    padding: 30px 70px !important;
   }
   .footer-main h1 {
     font-size: 28px !important;
@@ -620,7 +623,7 @@
   .footer-main {
     text-align: center !important;
     border-radius: 65px !important;
-    padding: 100px !important;
+    padding: 50px !important;
   }
 
   .our-products .card {

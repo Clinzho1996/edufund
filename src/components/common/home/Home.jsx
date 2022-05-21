@@ -2,18 +2,9 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
-import { Card, Image, ProgressBar, Form, InputGroup } from "react-bootstrap";
-import Carousel from "react-elastic-carousel";
-import Item from "./Item";
+import { Card, Image, ProgressBar, Form} from "react-bootstrap";
 
 import "./Home.css";
-
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 3 },
-  { width: 768, itemsToShow: 5 },
-  { width: 1200, itemsToShow: 6 },
-];
 
 const Home = () => (
   <main>
