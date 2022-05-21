@@ -1,4 +1,5 @@
 import { Home, Footer, About, Header, Pricing, Contact, StartCampaign } from "./components/common";
+import {AddMilestone} from "./components/common/startCampaign/AddMilestone"
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
@@ -15,6 +16,7 @@ function App() {
           <Route path="/pricing" exact="true" element={<Pricing />} />
           <Route path="/contact" exact="true" element={<Contact />} />
           <Route path="/startcampaign" exact="true" element={<StartCampaign />} />
+          {/* <Route path="/startcampaign" exact="true" element={<AddMilestone />} /> */}
         </Routes>
         <Footer />
       </div>
