@@ -62,7 +62,7 @@ export default function UserDetails({
               />
               <Button
               type="submit"
-                className="w-25 my-3 align-self-end rounded"
+                className="px-3 px-md-4 my-3 align-self-end rounded"
                 onClick={() => nextStep(startCampaign)}
               >
                 Next

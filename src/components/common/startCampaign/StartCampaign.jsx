@@ -16,7 +16,9 @@ const StartCampaign = () => {
     campaignTitle: "",
     campaignDetails: "",
     social: "",
+    socialLinks: [],
     amount: "",
+    milestone: [{ text: "", value: "" }],
   });
   // Back to the prev step
   const prevStep = (newData) => {
@@ -27,7 +29,6 @@ const StartCampaign = () => {
   const nextStep = (newData) => {
     setStartCampaign((prev) => ({ ...prev, ...newData }));
     setStep((prev) => prev + 1);
-    console.log(newData);
   };
 
   const formSteps = [
@@ -54,7 +55,7 @@ const StartCampaign = () => {
       prevStep={prevStep}
       setStartCampaign={setStartCampaign}
     />,
-    <Success startCampaign={startCampaign} />
+    <Success startCampaign={startCampaign} />,
   ];
   return <div>{formSteps[step]}</div>;
 };
