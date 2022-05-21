@@ -1,0 +1,12 @@
+.custom-amount{
+    justify-content: space-around;
+}
+
+.amount-raised {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+    padding-left: 5px;
+    margin-top: -20px;
+  }

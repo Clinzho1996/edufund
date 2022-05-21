@@ -21,12 +21,12 @@ const Header = () => <main>
               navbarScroll
             >
               <Nav.Link as={Link} to="/" >
-                Start
+                Home
               </Nav.Link>
               <Nav.Link as={Link} to="/" >
-                Team
+                Start
               </Nav.Link>
-              <Nav.Link as={Link} to="/" >Our Mission</Nav.Link>          
+              <Nav.Link as={Link} to="/about" >About Us</Nav.Link>          
             </Nav>
             <Form className="d-flex">
               <Button variant="outline-success" as={Link} to="/">Connect Wallet</Button>
@@ -53,7 +53,7 @@ const Header = () => <main>
               <Nav.Link as={Link} to="/pricing" eventKey="4">
                 Team
               </Nav.Link>
-              <Nav.Link as={Link} to="/about" eventKey="5">Our Mission</Nav.Link>          
+              <Nav.Link as={Link} to="/about" eventKey="5">About Us</Nav.Link>          
             </Nav>
             <Form className="d-flex">
               <Nav.Link className="outline-success" as={Link} to="/" eventKey="6">Connect Wallet</Nav.Link>

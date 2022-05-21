@@ -8,6 +8,7 @@ import {About} from "./components/common";
 import {Pricing} from "./components/common";
 import {Contact} from "./components/common";
 import ScrollToTop from "./components/ScrollToTop";
+import { Details } from "./components/common";
 
 
 
@@ -22,6 +23,7 @@ function App() {
                 <Route path="/about" exact element={<About />} />
                 <Route path="/pricing" exact element={<Pricing />} />
                 <Route path="/contact" exact element={<Contact />} />
+                <Route path="/details" exact element={<Details />} />
               </Routes>
            <Footer />
         </div>

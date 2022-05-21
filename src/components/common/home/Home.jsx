@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Card, Image, ProgressBar, Form} from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 
@@ -53,7 +54,7 @@ const Home = () => (
           <Col lg="2" md="3" sm="4" xs="6">
             <h3 className=" d-flex align-items-center gap-1">
               {" "}
-              <i class="fab fa-finder"></i> Finder
+              <i class="fa fa-search"></i> Finder
             </h3>
           </Col>
 
@@ -129,7 +130,40 @@ const Home = () => (
           <Col xs="4">
             <Card style={{ width: "24rem" }} className="shadow p-0 mb-2 bg-body rounded type-card">
               <Card.Body>
-                <Image src="django.jpg" width="100%" />
+              <Link to="/details"><Image src="django.jpg" width="100%" /></Link>
+              <Card.Title
+                  className="type-card__title"
+                > Help me learn Django
+                </Card.Title>
+                <Card.Subtitle className="subtitle">
+                My name is Femi. i'm interested in learning Django framework for backend development. I saw a course online with a lot of rating on Udemy
+                <br /> <br />
+                <ProgressBar now={60} />
+                <Form>
+                  <div className="custom-amount">
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                      <Form.Control type="text" value="$30" />
+                  </div>
+                  <div className="desired-amount">
+                    <Form.Control name="custom amount" placeholder="Enter a custom amount" />
+                    <button className="btn btn-primary">Donate</button>
+                  </div>
+                </Form>
+                <div className="amount">
+                  <p>Amount raised</p>
+                  <p>60%</p>
+                </div>
+                </Card.Subtitle>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs="4">
+            <Card style={{ width: "24rem" }} className="shadow p-0 mb-2 bg-body rounded type-card">
+              <Card.Body>
+              <Link to="/details"><Image src="django.jpg" width="100%" /></Link>
                 <Card.Title
                   className="type-card__title"
                 > Help me learn Django
@@ -162,40 +196,7 @@ const Home = () => (
           <Col xs="4">
             <Card style={{ width: "24rem" }} className="shadow p-0 mb-2 bg-body rounded type-card">
               <Card.Body>
-                <Image src="django.jpg" width="100%" />
-                <Card.Title
-                  className="type-card__title"
-                > Help me learn Django
-                </Card.Title>
-                <Card.Subtitle className="subtitle">
-                My name is Femi. i'm interested in learning Django framework for backend development. I saw a course online with a lot of rating on Udemy
-                <br /> <br />
-                <ProgressBar now={60} />
-                <Form>
-                  <div className="custom-amount">
-                      <Form.Control type="text" value="$30" />
-                      <Form.Control type="text" value="$30" />
-                      <Form.Control type="text" value="$30" />
-                      <Form.Control type="text" value="$30" />
-                      <Form.Control type="text" value="$30" />
-                  </div>
-                  <div className="desired-amount">
-                    <Form.Control name="custom amount" placeholder="Enter a custom amount" />
-                    <button className="btn btn-primary">Donate</button>
-                  </div>
-                </Form>
-                <div className="amount">
-                  <p>Amount raised</p>
-                  <p>60%</p>
-                </div>
-                </Card.Subtitle>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs="4">
-            <Card style={{ width: "24rem" }} className="shadow p-0 mb-2 bg-body rounded type-card">
-              <Card.Body>
-                <Image src="django.jpg" width="100%" />
+              <Link to="/details"><Image src="django.jpg" width="100%" /></Link>
                 <Card.Title
                   className="type-card__title"
                 > Help me learn Django

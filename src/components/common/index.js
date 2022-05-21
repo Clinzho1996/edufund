@@ -5,6 +5,7 @@ import 'react-router-dom';
 import About from "./about";
 import Pricing from "./pricing";
 import Contact from "./contact";
+import Details from "./details";
 
 
 export {
@@ -14,4 +15,5 @@ export {
     About,
     Pricing,
     Contact,
+    Details
 }
