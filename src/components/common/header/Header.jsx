@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
@@ -12,7 +11,7 @@ const Header = () => <main>
           <div className="offcanvas-header">  
             <button className="btn-close float-end"></button>
         </div>
-          <Navbar.Brand as={Link} to="/" exact="true"><img src="logo-black.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
+          <Navbar.Brand as={Link} to="/" exact><img src="logo-black.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -20,13 +19,13 @@ const Header = () => <main>
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
+              <Nav.Link as={Link} to="/" >
+                Home
+              </Nav.Link>
               <Nav.Link as={Link} to="/startcampaign" >
                 Start
               </Nav.Link>
-              <Nav.Link as={Link} to="/" >
-                Team
-              </Nav.Link>
-              <Nav.Link as={Link} to="/" >Our Mission</Nav.Link>          
+              <Nav.Link as={Link} to="/about" >About Us</Nav.Link>          
             </Nav>
             <Form className="d-flex">
               <Button variant="outline-success" as={Link} to="/">Connect Wallet</Button>
@@ -35,7 +34,7 @@ const Header = () => <main>
       </Navbar>
       <Container className="mobile">
       <Navbar bg="transparent"  fixed="top" collapseOnSelect expand="false" >
-           <Navbar.Brand as={Link} to="/" exact="true"><img src="16.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
+           <Navbar.Brand as={Link} to="/" exact><img src="logo-black.png" alt="brand-logo" width={'150px'} /></Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
               id="offcanvasNavbar"
@@ -43,25 +42,24 @@ const Header = () => <main>
               placement="end"
             >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel"><img src="logo-new.png" alt="brand-logo" width={'250px'} /></Offcanvas.Title>
+              <Offcanvas.Title id="offcanvasNavbarLabel"><img src="logo-black.png" alt="brand-logo" width={'250px'} /></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link as={Link} to="/solution" eventKey="3" >
+              <Nav.Link as={Link} to="/startcampaign" eventKey="3" >
                 Start
               </Nav.Link>
               <Nav.Link as={Link} to="/pricing" eventKey="4">
                 Team
               </Nav.Link>
-              <Nav.Link as={Link} to="/about" eventKey="5">Our Mission</Nav.Link>          
+              <Nav.Link as={Link} to="/about" eventKey="5">About Us</Nav.Link>          
             </Nav>
             <Form className="d-flex">
-              <Nav.Link className="outline-success" as={Link} to="/contact" eventKey="6">Connect Wallet</Nav.Link>
+              <Nav.Link className="outline-success" as={Link} to="/" eventKey="6">Connect Wallet</Nav.Link>
             </Form>
             </Offcanvas.Body>
        </Navbar.Offcanvas>
       </Navbar>
       </Container>
 </main>
-
 export default Header;

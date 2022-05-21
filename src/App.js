@@ -1,4 +1,3 @@
-import React from "react";
 import { Home, Footer, About, Header, Pricing, Contact, StartCampaign } from "./components/common";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";

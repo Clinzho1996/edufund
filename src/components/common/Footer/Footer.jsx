@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Container, Row, Col, InputGroup, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -18,8 +17,13 @@ const Footer = () => {
             specialist.
           </p>
           <div className="footer-btn">
-            <Link to="/contact">
+            <Link to="/">
               <Button className="btn btn-success" aria-pressed="false">
+                Connect Wallet
+              </Button>
+            </Link>
+            <Link to="/">
+              <Button className="btn btn-primary" aria-pressed="false">
                 Contact Us
               </Button>
             </Link>
@@ -52,7 +56,7 @@ const Footer = () => {
                 <Link to="/">About</Link>
               </li>
               <li>
-                <Link to="/">Mission</Link>
+                <Link to="/">Campaign</Link>
               </li>
               <li>
                 <Link to="/">Our Team</Link>
@@ -63,7 +67,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-md-4 mb-md-0 mb-3">
+          <div className="col-md-4 mb-md-0 mb-3 foot-btn">
             <h5 className="footer-group-name">Newsletter</h5>
             <p className="newsletter-intro">
               To receive industry updates on latest educational funds <br /> program please subscribe for our monthly campaigns
@@ -83,7 +87,7 @@ const Footer = () => {
               </Col>
               <Col xs="4 g-1">
                 <Button type="submit" className="form-submit">
-                Subscribe <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                Subscribe <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </Button>
               </Col>
 
@@ -97,22 +101,22 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fa-brands fa-facebook-square"></i>
+                  <i class="fa-brands fa-facebook-square"></i>
                 </a>
                 <a
                   href="/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fa-brands fa-instagram-square"></i>
+                  <i class="fa-brands fa-instagram-square"></i>
                 </a>
-                <i className="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin"></i>
                 <a
                   href="/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-twitter"></i>
                 </a>
               </div>
             </Row>
