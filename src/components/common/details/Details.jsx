@@ -34,7 +34,6 @@ const Details = () => (
                     <button className="btn btn-outline-dark">Blockchain</button>
                     <button className="btn btn-outline-dark">Blockchain</button>
                     <button className="btn btn-outline-dark">Blockchain</button>
-                    <button className="btn btn-outline-dark">Blockchain</button>
                 </div>
                 <br /> 
                 <h4 style={{color: '#3180EB', fontWeight: 600}}>Financial Support</h4>
