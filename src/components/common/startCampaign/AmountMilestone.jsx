@@ -5,7 +5,7 @@ const AmountMilestone = ({setStartCampaign, startCampaign, nextStep, prevStep   
         <Container className="userContainer">
       <Row>
         <Col md={6} className="m-auto p-5">
-          <h2 className="mb-3">Create a new campaign</h2>
+          <h2 className="mb-3 text-primary">Create a new campaign</h2>
           <Form className="d-flex flex-column ">
             <label htmlFor="name" className="mt-2">
               Amount
