@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
@@ -23,7 +22,7 @@ const Header = () => <main>
               <Nav.Link as={Link} to="/" >
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/" >
+              <Nav.Link as={Link} to="/startcampaign" >
                 Start
               </Nav.Link>
               <Nav.Link as={Link} to="/about" >About Us</Nav.Link>          
@@ -47,7 +46,7 @@ const Header = () => <main>
             </Offcanvas.Header>
             <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Nav.Link as={Link} to="/solution" eventKey="3" >
+              <Nav.Link as={Link} to="/startcampaign" eventKey="3" >
                 Start
               </Nav.Link>
               <Nav.Link as={Link} to="/pricing" eventKey="4">
@@ -63,5 +62,4 @@ const Header = () => <main>
       </Navbar>
       </Container>
 </main>
-
 export default Header;

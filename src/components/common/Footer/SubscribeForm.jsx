@@ -36,7 +36,7 @@ export default function SubscribeForm({ subscribe, status, message }) {
         <Col xs="4 g-1">
           <Button type="submit" className="form-submit">
             {status === "sending" ? "Loading..." : "Subscribe"}{" "}
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <i className="fa fa-arrow-right" aria-hidden="true"></i>
           </Button>
         </Col>
 
@@ -56,22 +56,22 @@ export default function SubscribeForm({ subscribe, status, message }) {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-brands fa-facebook-square"></i>
+            <i className="fa-brands fa-facebook-square"></i>
           </a>
           <a
             href="https://instagram.com/swapbase_io"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-brands fa-instagram-square"></i>
+            <i className="fa-brands fa-instagram-square"></i>
           </a>
-          <i class="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-linkedin"></i>
           <a
             href="https://twitter.com/swapbase"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-twitter"></i>
           </a>
         </div>
       </Row>

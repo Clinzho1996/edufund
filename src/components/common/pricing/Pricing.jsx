@@ -27,7 +27,7 @@ const Pricing = () => {
                 <Form.Label>Full Name</Form.Label>
                 <InputGroup hasValidation>
                   <InputGroup.Text>
-                    <i class="fa-solid fa-user"></i>
+                    <i className="fa-solid fa-user"></i>
                   </InputGroup.Text>
                   <Form.Control
                     name="name"
@@ -41,7 +41,7 @@ const Pricing = () => {
                 <Form.Label>Business email address</Form.Label>
                 <InputGroup hasValidation>
                   <InputGroup.Text>
-                    <i class="fa-solid fa-at"></i>
+                    <i className="fa-solid fa-at"></i>
                   </InputGroup.Text>
                   <Form.Control
                     type="email"
@@ -56,7 +56,7 @@ const Pricing = () => {
                 <Form.Label>Phone Number</Form.Label>
                 <InputGroup hasValidation>
                   <InputGroup.Text>
-                    <i class="fa-solid fa-phone"></i>
+                    <i className="fa-solid fa-phone"></i>
                   </InputGroup.Text>
                   <Form.Control
                     name="phone"
@@ -82,7 +82,7 @@ const Pricing = () => {
                 </InputGroup>
               </Col>
               <Col xs="12 g-1">
-                <Button type="submit" className="form-submit"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <Button type="submit" className="form-submit"><i className="fa fa-arrow-right" aria-hidden="true"></i>
                 </Button>
               </Col>
             </Row>
