@@ -20,6 +20,11 @@ const Footer = () => {
           <div className="footer-btn">
             <Link to="/contact">
               <Button className="btn btn-success" aria-pressed="false">
+                Connect Wallet
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button className="btn btn-primary" aria-pressed="false">
                 Contact Us
               </Button>
             </Link>
